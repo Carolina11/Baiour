@@ -96,11 +96,12 @@
 }
 .imprintsDiv{
   margin-left: 136px;
-  top: 28px;
-  width: 100%;
+  position:absolute;
+  top: 184px;
+  width: 90%;
   height: 25px;
   background: #005c7c;
-  display: none;
+  visibility: visible;
 }
 .imprintsDiv li {
   display: inline;
@@ -124,9 +125,10 @@
 .imprintsDiv a:hover {
   color: #f1bf1e;
 }
-.menuDiv a:hover + .imprintsDiv {
-  display: block;
+.menuDiv a:hover + .imprintsDiv{
+visibility: visible;
 }
+
 
 
 .carouselDiv {
