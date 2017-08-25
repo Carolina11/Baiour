@@ -38,7 +38,7 @@
 }
 .menuDiv > a {
   position: absolute;
-  margin-left: 75px;
+  margin-left: 45px;
   color: #fff;
 }
 .menuDiv > a:before {
@@ -68,8 +68,7 @@
   border-left: 8px solid transparent;
 }
 .menu {
-  margin-left: 160px;
-  display: inline-block;
+  margin-left: 130px;
   height: inherit;
   background: url(../../images/menuBG.jpg);
 }
@@ -83,7 +82,7 @@
   color: #fff;
 }
 .menu li {
-  display: inline;
+  display:inline-flex;
   list-style-type: none;
   margin: 0 12px 0 6px;
 }
@@ -96,12 +95,12 @@
   content: url(../../images/menuDivLine1.png);
 }
 .imprintsDiv{
-  left: 80px;
+  margin-left: 136px;
   top: 28px;
   width: 100%;
   height: 25px;
   background: #005c7c;
-  visibility: hidden;
+  display: none;
 }
 .imprintsDiv li {
   display: inline;
@@ -125,8 +124,8 @@
 .imprintsDiv a:hover {
   color: #f1bf1e;
 }
-.menuDiv a:hover +.iImprintsDiv {
-  visibility: visible;
+.menuDiv a:hover + .imprintsDiv {
+  display: block;
 }
 
 

@@ -18,22 +18,7 @@ export default class Home extends React.PureComponent {
 
           <div className="bigContainer">
             <div className="headerDiv"><a href=""></a></div>{/* off headerDiv (link not wrking) */}
-              <div className="menuDiv"><a href="">IMPRINTS</a>
-                <div className="imprintsDiv">
-                  <ul>
-                  <li><a href="">QUAYSGATEKOP</a></li>
-                  <li><a href="">SPEENI</a></li>
-                  <li><a href="">JOINTH</a></li>
-                  <li><a href="">RAWOLI</a></li>
-                  <li><a href="">UTEARDA</a></li>
-                  <li><a href="">RIVERBALET</a></li>
-                  <li><a href="">DOYLENARFKIN</a></li>
-                  <li><a href="">AIXTOR</a></li>
-                  <li><a href="">VIDIR</a></li>
-                  <li><a href="">TAWO</a></li>
-                  <li><a href="">SJORICA</a></li>
-                  </ul>
-                </div> {/* off imprintsDiv */}
+              <div className="menuDiv"><a href="javascript:void(0);">IMPRINTS</a>
                 <div className="menu">
                 <ul>
                 <li><a href="">NEWS</a></li>
@@ -45,6 +30,21 @@ export default class Home extends React.PureComponent {
                 <li><a href="">INTRANET</a></li>
                 </ul>
               </div>{/* off menu */}
+              <div className="imprintsDiv">
+                <ul>
+                <li><a href="">QUAYSGATEKOP</a></li>
+                <li><a href="">SPEENI</a></li>
+                <li><a href="">JOINTH</a></li>
+                <li><a href="">RAWOLI</a></li>
+                <li><a href="">UTEARDA</a></li>
+                <li><a href="">RIVERBALET</a></li>
+                <li><a href="">DOYLENARFKIN</a></li>
+                <li><a href="">AIXTOR</a></li>
+                <li><a href="">VIDIR</a></li>
+                <li><a href="">TAWO</a></li>
+                <li><a href="">SJORICA</a></li>
+                </ul>
+              </div> {/* off imprintsDiv */}
               </div>{/* off menuDiv *** */}
 
 
