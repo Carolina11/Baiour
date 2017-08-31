@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 
 import './style.css';
 import './styleM.css';
+import Carousel from 'components/Carousel';
 
 export default class Home extends React.PureComponent {
   render() {
@@ -47,8 +48,7 @@ export default class Home extends React.PureComponent {
               </div>{/* off menu */}
               </div>{/* off menuDiv *** */}
 
-
-            <div className="carouselDiv*"></div>
+              <Carousel />
 
           </div>
       </div>

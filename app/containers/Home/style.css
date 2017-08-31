@@ -1,6 +1,7 @@
 .container {
   display:flex;
   flex-direction:column;
+  align-content: center;
   min-height:100vh;
   background: #000;
   background: url(../../images/background.jpg) repeat;
@@ -10,6 +11,10 @@
   text-decoration: none;
 }
 .bigContainer{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   position: relative;
   width: 70%;
   height: 100vh;
@@ -35,6 +40,7 @@
   color: #fff;
   line-height: 28px;
   letter-spacing: 1px;
+  width: 100%;
 }
 .menuDiv > a {
   position: absolute;
@@ -88,6 +94,7 @@
 }
 .menu li + li:before {
   margin-left: -14px;
+  margin-right: 8px;
   content: url(../../images/menuDivLine2.png);
 }
 .menu ul li:first-child:before {
@@ -101,7 +108,7 @@
   width: 90%;
   height: 25px;
   background: #005c7c;
-  visibility: visible;
+  visibility: hidden;
 }
 .imprintsDiv li {
   display: inline;
@@ -115,7 +122,7 @@
 }
 .imprintsDiv li +li:before {
   position: absolute;
-  margin-left: -14px;
+  margin-left: -12px;
   content: url(../../images/imprintsDivLine.png);
 }
 .imprintsDiv a {
@@ -127,12 +134,4 @@
 }
 .menuDiv a:hover + .imprintsDiv{
 visibility: visible;
-}
-
-
-
-.carouselDiv {
-  background: #fff;
-  width: 70%;
-  height: 150px;
 }

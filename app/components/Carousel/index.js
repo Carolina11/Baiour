@@ -30,12 +30,28 @@ export default class Carousel extends React.PureComponent {
     }
   }
 
-
-
   render() {
     return (
       <div className="carouselDiv">
-        <img className="slideImage" src={require('../../images/' + this.renderImage())} />
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[0])} />
+        </div>
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[1])} />
+        </div>
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[2])} />
+        </div>
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[3])} />
+        </div>
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[4])} />
+        </div>
+        <div className="carouselItem">
+          <img className="carouselImage" src={require('../../images/' + this.state.images[5])} />
+        </div>
+
         <leftIcon className="sliderIconLeft" onClick={this.previousImage} />
         <rightIcon className="sliderIconRight" onClick={this.nextImage}/>
         <div className="toggleAuto" onClick={this.stopAutoSlide}><br />Stop slide show</div>
