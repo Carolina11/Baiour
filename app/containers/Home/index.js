@@ -49,8 +49,67 @@ export default class Home extends React.PureComponent {
               </div>{/* off menuDiv *** */}
 
               <Carousel />
+              <div className="bodyContainer">
 
-          </div>
+                <div className="leftContentDiv">Content here</div>
+                <div className="rightContentDiv">
+                  <div className="boxes">
+                    <div className="box1">
+                        <div className="boxTabs">
+                          <ul>
+                            <li id="box1Tab1"><a href="">booktrailer</a></li>
+                            <li id="box1Tab2"><a href="">ebooks</a></li>
+                            <li id="box1Tab1Tab3"><a href="">catalogue</a></li>
+                          </ul>
+                      </div>
+                      <div className="box1Content1">
+                        <iframe src="https://www.youtube.com/embed/JlOrcLeEC7Q" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div className="box2">
+                      <div className="boxTabs">
+                        <ul>
+                          <li id="Box2Tab1"><a href="">press</a></li>
+                          <li id="Box2Tab2"><a href="">newsletter</a></li>
+                          <li id="Box2Tab3"><a href="">games</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="box3">
+                      <div className="boxTabs">
+                        <ul>
+                          <li id="box3Tab1"><a href="">new releases</a></li>
+                          <li id="box3Tab2"><a href="">archive</a></li>
+                          <li id="box3Tab3"><a href="">forums</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>{/* off bodyContainer */}
+              <div className="footer1Div">
+                <div className="facebookDiv"></div>
+                <div className="twitterDiv"></div>
+                <div className="mediaDiv">
+                  <div className="mediaText">
+                    <p>come join us!</p>
+                  </div>
+                  <div className="mediaUL">
+                    <ul className="mediaUL1">
+                      <li className="mediaLi1"><a href="http://www.twitter.com">twitter</a></li>
+                      <li className="mediaLi2"><a href="http://www.facebook.com">facebook</a></li>
+                      <li className="mediaLi3"><a href="http://www.youtube.com">youtube</a></li>
+                    </ul>
+                    <ul className="mediaUL2">
+                      <li className="mediaLi4"><a href="http://www.linkedin.com">linkedin</a></li>
+                      <li className="mediaLi5"><a href="http://www.goodreads.com">goodreads</a></li>
+                      <li className="mediaLi6"><a href="#rss">rss</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="footer2Div">Legalese | Contact | Online Store </div>
+          </div>{/* off bigContainer*/}
       </div>
     );
   }

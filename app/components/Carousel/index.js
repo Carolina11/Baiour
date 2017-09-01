@@ -9,6 +9,9 @@ import React from 'react';
 import './style.css';
 import './styleM.css';
 
+import TiChevronLeft from 'react-icons/lib/ti/chevron-left';
+import TiChevronRight from 'react-icons/lib/ti/chevron-right';
+
 export default class Carousel extends React.PureComponent {
   constructor() {
     super();
@@ -33,6 +36,8 @@ export default class Carousel extends React.PureComponent {
   render() {
     return (
       <div className="carouselDiv">
+        <leftIcon className="carouselIconLeft-" onClick={this.previousImage} />
+        <TiChevronLeft className="carouselIcons" />
         <div className="carouselItem">
           <img className="carouselImage" src={require('../../images/' + this.state.images[0])} />
         </div>
@@ -51,11 +56,8 @@ export default class Carousel extends React.PureComponent {
         <div className="carouselItem">
           <img className="carouselImage" src={require('../../images/' + this.state.images[5])} />
         </div>
-
-        <leftIcon className="sliderIconLeft" onClick={this.previousImage} />
-        <rightIcon className="sliderIconRight" onClick={this.nextImage}/>
-        <div className="toggleAuto" onClick={this.stopAutoSlide}><br />Stop slide show</div>
-        <div className="toggleAuto" onClick={this.autoSlide}><br />Start slide show</div>
+        <rightIcon className="carouselIconRight-" onClick={this.nextImage}/>
+        <TiChevronRight className="carouselIcons" />
       </div>/* off carouselDiv */
     );
   }

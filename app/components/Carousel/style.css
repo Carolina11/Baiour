@@ -1,11 +1,11 @@
 /* Carousel Styles */
 .carouselDiv {
   position: relative;
-  top: 24px;
+  top: 26px;
   align-self: center;
   background: #fff;
   width: 96%;
-  height: 200px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,14 +14,20 @@
 }
 .carouselItem {
   width: 28%;
-
   margin: 15px;
 }
 .carouselImage {
   width: 100%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
 }
 .carouselImage:hover {
-  box-shadow: 0 0 15px 0 rgba(0,0,0,0.9);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.9);
   transition: all 400ms ease-in-out;
-  transform: scale(1.1);
+}
+.carouselIcons {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  color: rgba(241, 191, 30, 0.5);
 }

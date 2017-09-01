@@ -2,7 +2,7 @@
   display:flex;
   flex-direction:column;
   align-content: center;
-  min-height:100vh;
+  min-height: 100vh;
   background: #000;
   background: url(../../images/background.jpg) repeat;
   font: 12px Helvetica, Arial, Verdana, Sans-serif;
@@ -16,8 +16,9 @@
   align-content: center;
   align-items: center;
   position: relative;
+  min-height: 100vh;
   width: 70%;
-  height: 100vh;
+  height: auto;
   margin:0 auto;
   border-left: solid #069;
   border-right:solid #069;
@@ -133,5 +134,229 @@
   color: #f1bf1e;
 }
 .menuDiv a:hover + .imprintsDiv{
-visibility: visible;
+  visibility: visible;
+}
+.bodyContainer {
+  position: relative;
+  top: 45px;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.leftContentDiv {
+  position: relative;
+  padding: 10px;
+  width: 50%;
+  margin-right: 15px;
+  margin: 0;
+  background: #fff;
+  border-bottom-right-radius: 50px;
+}
+.rightContentDiv {
+  width: 50%;
+  margin-left: 15px;
+}
+  /* Boxes ----------------------------- */
+.boxes {
+position: relative;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+width: 100%;
+color: #fff;
+}
+.box1 {
+background: #069;
+margin-bottom: 15px;
+padding-top: 25px;
+}
+.box2 {
+background: #069;
+margin-bottom: 15px;
+padding-top: 25px;
+}
+.box3 {
+background: #069;
+padding-top: 25px;
+}
+{/* Box Tabs --------------------------------- */ }
+.boxTabs {
+position: relative;
+display: flex;
+flex-direction: row;
+overflow: hidden;
+top: -25px;
+height: 25px;
+line-height: 25px;
+background: #000;
+border-bottom: 1px solid #000;
+color: #fff;
+}
+.boxTabs a {
+color: #fff;
+}
+.boxTabs li {
+list-style-type: none;
+display: inline;
+margin-right: 3px;
+padding: 3px 8px;
+border: 1px solid #069;
+letter-spacing: 2px;
+}
+.boxTabs ul li:first-child {
+background: #069;
+}
+.boxTabs li:hover {
+background: #069;
+}
+/* Boxes Content ---------------------------- */
+
+.box1Content1 {
+position: relative;
+margin-top: -20px;
+margin-left: 15px;
+padding: 10px;
+}
+.box2Content1 > ul {
+margin-top: 10px;
+}
+.box2Content1 li {
+margin-left: 30px;
+line-height: 18px;
+list-style-type: square;
+font-size: 15px;
+color: #fff;
+}
+.box2Content1 li ul li {
+margin-left: 0px;
+list-style-type: none;
+}
+.box2Content1 a {
+color: #f1bf1e;
+font-size: 13px;
+}
+.box2Content1 a:hover {
+color: #000;
+}
+.box3Content1 {
+background-size: 20% 20%;
+margin: 5px 10px;
+background-position: top left;
+}
+.box3Content1 ul {
+margin-top: 10px;
+line-height: 20px;
+list-style-type: none;
+}
+.box3Content1 li {
+text-align: center;
+font-size: 14px;
+}
+.box3Content1 li:after {
+content: url(../../images/newReleasesDivLine.png);
+margin-top: -5px;
+display: block;
+}
+.box3Content1 a {
+color: #fff;
+}
+.box3Content1 a:hover {
+color: #f1bf1e;
+}
+{/* footer1Div -------------------------------- */}
+.footer1Div {
+position: relative;
+display: flex;
+flex-direction: row;
+align-content: center;
+width: 96%;
+height: 300px;
+margin: 15px;
+background: #069;
+color: #000;
+}
+.facebookDiv {
+height: 250px;
+width: 27%;
+margin-top: 25px;
+margin-right: 10px;
+margin-left: 15px;
+background: #fff;
+color: #000;
+}
+.twitterDiv{
+height: 250px;
+width: 27%;
+margin-top: 25px;
+margin-left: 10px;
+background: #fff;
+color: #000;
+}
+.mediaDiv{
+height: 230px;
+width: 45%;
+padding: 10px;
+margin-top: 25px;
+margin-left: 25px;
+margin-right: 15px;
+background: #000;
+color: #fff;
+font-size: 19px;
+display: flex;
+flex-direction: column;
+align-content: center;
+overflow: hidden;
+}
+.mediaText p {
+  font-family: sans-serif;
+}
+.mediaDiv a {
+color: #fff;
+}
+.mediaUL {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mediaDiv li{
+font-size: 17px;
+line-height: 24px;
+margin: 20px;
+}
+.mediaDiv li:after{
+content: url(../../images/mediaDivLine.png);
+display: block;
+margin-top: -20px;
+margin-left: -43px;
+}
+.mediaDiv .mediaLi1 {
+list-style-image: url(../../images/media_twitter.png);
+}
+.mediaDiv .mediaLi2 {
+list-style-image: url(../../images/media_facebook.png);
+}
+.mediaDiv .mediaLi3 {
+list-style-image: url(../../images/media_youtube.png);
+}
+.mediaDiv .mediaLi4 {
+list-style-image: url(../../images/media_linkedin.png);
+}
+.mediaDiv .mediaLi5 {
+list-style-image: url(../../images/media_goodreads.png);
+}
+.mediaDiv .mediaLi6 {
+list-style-image: url(../../images/media_rss.png);
+}
+.footer2Div{
+position: relative;
+width: 96%;
+height: 79px;
+background: #069 url(../../images/footer.png) no-repeat right;
+border-bottom-right-radius: 50px;
+color: #fff;
+line-height: 79px;
+text-indent: 25px;
 }
