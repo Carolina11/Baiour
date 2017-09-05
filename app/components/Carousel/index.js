@@ -38,24 +38,11 @@ export default class Carousel extends React.PureComponent {
       <div className="carouselDiv">
         <leftIcon className="carouselIconLeft-" onClick={this.previousImage} />
         <TiChevronLeft className="carouselIcons" />
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[0])} />
-        </div>
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[1])} />
-        </div>
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[2])} />
-        </div>
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[3])} />
-        </div>
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[4])} />
-        </div>
-        <div className="carouselItem">
-          <img className="carouselImage" src={require('../../images/' + this.state.images[5])} />
-        </div>
+        {this.state.images.map((item, index) => (
+          <div className="carouselItem">
+            <img className="carouselImage" src={require('../../images/' + this.state.images[index])} />
+          </div>
+        ))}
         <rightIcon className="carouselIconRight-" onClick={this.nextImage}/>
         <TiChevronRight className="carouselIcons" />
       </div>/* off carouselDiv */

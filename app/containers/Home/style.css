@@ -42,6 +42,7 @@
   line-height: 28px;
   letter-spacing: 1px;
   width: 100%;
+    overflow: hidden;
 }
 .menuDiv > a {
   position: absolute;
@@ -135,6 +136,7 @@
 }
 .menuDiv a:hover + .imprintsDiv{
   visibility: visible;
+    overflow: hidden;
 }
 .bodyContainer {
   position: relative;
@@ -154,6 +156,14 @@
   margin: 0;
   background: #fff;
   border-bottom-right-radius: 50px;
+}
+.signUPDiv {
+  text-align: right;
+  font-style: italic;
+}
+.signUPDiv a {
+  color: #000;
+  text-decoration: underline;
 }
 .rightContentDiv {
   width: 50%;
@@ -218,7 +228,14 @@ background: #069;
 position: relative;
 margin-top: -20px;
 margin-left: 15px;
+margin-right: 15px;
 padding: 10px;
+}
+.videoDiv {
+position: relative;
+display: flex;
+justify-content: center;
+align-content: center;
 }
 .box2Content1 > ul {
 margin-top: 10px;
@@ -271,60 +288,58 @@ color: #f1bf1e;
 position: relative;
 display: flex;
 flex-direction: row;
-align-content: center;
 width: 96%;
 height: 300px;
 margin: 15px;
 background: #069;
 color: #000;
 }
-.facebookDiv {
-height: 250px;
-width: 27%;
-margin-top: 25px;
-margin-right: 10px;
-margin-left: 15px;
-background: #fff;
-color: #000;
-}
-.twitterDiv{
-height: 250px;
-width: 27%;
-margin-top: 25px;
-margin-left: 10px;
-background: #fff;
-color: #000;
-}
-.mediaDiv{
-height: 230px;
-width: 45%;
-padding: 10px;
-margin-top: 25px;
-margin-left: 25px;
-margin-right: 15px;
-background: #000;
-color: #fff;
-font-size: 19px;
+.feedsDiv {
+position: relative;
 display: flex;
-flex-direction: column;
+flex-direction: row;
+width: 35%;
+margin: 15px;
+justify-content: center;
 align-content: center;
+align-items: center;
+}
+.facebookDiv {
+height: 100%;
+width: 96%;
+background: #fff;
+color: #000;
+border: none;
 overflow: hidden;
 }
+.mediaDiv{
+height: 250px;
+width: 35%;
+padding: 10px;
+margin: 15px;
+background: #000;
+color: #fff;
+font-size: 18px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
 .mediaText p {
-  font-family: sans-serif;
+font-family: sans-serif;
 }
 .mediaDiv a {
 color: #fff;
 }
 .mediaUL {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 .mediaDiv li{
-font-size: 17px;
+font-size: 16px;
 line-height: 24px;
-margin: 20px;
+margin: 30px;
 }
 .mediaDiv li:after{
 content: url(../../images/mediaDivLine.png);
@@ -359,4 +374,7 @@ border-bottom-right-radius: 50px;
 color: #fff;
 line-height: 79px;
 text-indent: 25px;
+}
+.footer2Div a {
+color: #fff;
 }

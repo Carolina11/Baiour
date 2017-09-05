@@ -10,11 +10,56 @@ import Helmet from 'react-helmet';
 import './style.css';
 import './styleM.css';
 import Carousel from 'components/Carousel';
+import Welcome from 'components/Welcome';
+import SignIN from 'components/SignIN';
+import SignUP from 'components/SignUP';
+import AdminHome from 'components/AdminHome';
+import AdminUpldImages from 'components/AdminUpldImages';
+import About from 'components/About';
 
 export default class Home extends React.PureComponent {
+  constructor() {
+    super();
+    this.state = {
+      content: ['welcome', 'signIN', 'signUP', 'adminHome', 'adminUpldImages', 'about'],
+      contentIndex:0
+    }
+  }
+
+  handleIndex = (index) => {
+    this.setState({
+      contentIndex:index
+    })
+  };
+
+  renderContent = () => {
+    switch (this.state.contentIndex) {
+      case 0:
+        return (<Welcome />);
+        break;
+      case 1:
+        return (<div><SignIN /> <div className="signUPDiv"><p>Need an account? <a href='#top' onClick={() => this.handleIndex(2)}>Sign up here!</a></p></div></div>);
+        break;
+      case 2:
+        return (<SignUP />);
+        break;
+      case 3:
+        return (<AdminHome />);
+        break;
+      case 4:
+        return (<AdminUpldImages />);
+        break;
+      case 5:
+        return (<About />);
+        break;
+      default:
+        return (<Welcome />);
+    }
+  }
   render() {
     return (
       <div className="container">
+
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
 
           <div className="bigContainer">
@@ -38,7 +83,7 @@ export default class Home extends React.PureComponent {
                 <div className="menu">
                 <ul>
                 <li><a href="">NEWS</a></li>
-                <li><a href="">ABOUT US</a></li>
+                <li><a href="#top" onClick = {() => this.handleIndex(5)}>ABOUT US</a></li>
                 <li><a href="">DISTRIBUTORS</a></li>
                 <li><a href="">INTERNATIONAL</a></li>
                 <li><a href="">BOOKSTORES</a></li>
@@ -51,7 +96,15 @@ export default class Home extends React.PureComponent {
               <Carousel />
               <div className="bodyContainer">
 
-                <div className="leftContentDiv">Content here</div>
+                <div className="leftContentDiv">
+
+
+                {this.renderContent()}
+
+
+
+                </div>
+
                 <div className="rightContentDiv">
                   <div className="boxes">
                     <div className="box1">
@@ -63,7 +116,9 @@ export default class Home extends React.PureComponent {
                           </ul>
                       </div>
                       <div className="box1Content1">
-                        <iframe src="https://www.youtube.com/embed/JlOrcLeEC7Q" frameborder="0" allowfullscreen></iframe>
+                        <div className="videoDiv">
+                          <iframe width="100%" src="https://www.youtube.com/embed/-W7-6kGqzho" frameborder="0" allowfullscreen></iframe>
+                        </div>
                       </div>
                     </div>
                     <div className="box2">
@@ -74,6 +129,11 @@ export default class Home extends React.PureComponent {
                           <li id="Box2Tab3"><a href="">games</a></li>
                         </ul>
                       </div>
+                      <div className="box2Content1">
+                        <div className="videoDiv">
+                          <iframe width="100%" src="https://www.youtube.com/embed/-W7-6kGqzho" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                     <div className="box3">
                       <div className="boxTabs">
@@ -83,13 +143,21 @@ export default class Home extends React.PureComponent {
                           <li id="box3Tab3"><a href="">forums</a></li>
                         </ul>
                       </div>
+                      <div className="box3Content1">
+                        <div className="videoDiv">
+                          <iframe width="100%" src="https://www.youtube.com/embed/-W7-6kGqzho" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>{/* off bodyContainer */}
               <div className="footer1Div">
-                <div className="facebookDiv"></div>
-                <div className="twitterDiv"></div>
+                <div className="feedsDiv">
+                  <div className="facebookDiv">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" height="250" width="100%" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                  </div>
+                </div>
                 <div className="mediaDiv">
                   <div className="mediaText">
                     <p>come join us!</p>
@@ -108,7 +176,7 @@ export default class Home extends React.PureComponent {
                   </div>
                 </div>
               </div>
-              <div className="footer2Div">Legalese | Contact | Online Store </div>
+              <div className="footer2Div"><a href="#top" onClick={() => this.handleIndex(1)}>Sign in</a> | Legalese | Contact | Online Store </div>
           </div>{/* off bigContainer*/}
       </div>
     );

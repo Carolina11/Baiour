@@ -1,0 +1,12 @@
+/* About Styles */
+.aboutContainer {
+  margin: 5px;
+  font-family: sans-serif;
+}
+header {
+  font-size: 18px;
+}
+p {
+  font-family: inherit;
+  font-size: 12px;
+}
