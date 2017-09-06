@@ -22,10 +22,9 @@ export default class Home extends React.PureComponent {
     super();
     this.state = {
       content: ['welcome', 'signIN', 'signUP', 'adminHome', 'adminUpldImages', 'about'],
-      contentIndex:0
+      contentIndex:0,
     }
   }
-
   handleIndex = (index) => {
     this.setState({
       contentIndex:index
